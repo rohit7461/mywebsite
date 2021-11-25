@@ -30,13 +30,14 @@ p {
   font-size: var(--text-body);
 }
 
-h1,h2 {
+h1,
+h2 {
   color: var(--color-highlight);
   font-size: var(--text-title);
   font-weight: 400;
 }
 
-h2{
+h2 {
   font-size: var(--text-sub);
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .section-padding {
-  padding: 5rem;
+  padding: 5rem 0;
 }
 
 .section-bg {
@@ -148,26 +149,62 @@ body {
 
 /* about section */
 
-.about .works .work{
+.about .works .work {
   background: #272727;
 }
 
-.about .skills p{
+.about .skills p {
   line-height: 35px;
   letter-spacing: 2px;
 }
 
-.about .skills p:nth-child(3){
+.about .skills p:nth-child(3) {
   font-weight: 600;
 }
 
-.about .skills .skill-icons .content{
+.about .skills .skill-icons .content {
   width: 370px;
 }
 
-.about .skills .skill-icons .skill-icon{
+.about .skills .skill-icons .skill-icon {
   display: inline-block;
   height: 40px;
   width: 40px;
   margin: 0 0.2rem 1.2rem 0.2rem;
+}
+
+/* projects section */
+.projects {
+  position: relative;
+}
+
+.projects::before {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) skewY(-15deg);
+  background: #2b2b2b;
+  z-index: -10;
+}
+
+.projects .contents .project {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.swiper-pagination-bullet{
+  background: #e6e6e6;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--color-white);
 }
