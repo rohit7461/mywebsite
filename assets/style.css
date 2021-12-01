@@ -127,8 +127,10 @@ body {
   margin: 30px 0;
 }
 
-.banner .title .cta {
+.banner .title .cta,
+.contact form button.cta {
   color: white;
+  background: transparent;
   border: 1px solid white;
   width: 150px;
   margin: 20px 0;
@@ -141,10 +143,14 @@ body {
   transform: translateY(-2px);
 }
 
+.btn:focus{
+  box-shadow: none;
+}
+
 .banner .img-Bx {
   position: relative;
   height: 90vh;
-  min-width: 450px;
+  min-width: 350px;
 }
 
 /* about section */
@@ -192,8 +198,9 @@ body {
 
 .projects .contents .project {
   position: relative;
-  width: 600px;
-  height: 400px;
+  width: 90%;
+  max-width: 500px;
+  height: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,10 +208,181 @@ body {
   margin: 4rem 0;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background: #e6e6e6;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background: var(--color-white);
+}
+
+.projects .contents .quote {
+  position: relative;
+  max-width: 350px;
+  text-align: right;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.projects .contents .quote p span {
+  display: block;
+  color: var(--color-highlight);
+  margin: 1.5rem 0;
+}
+
+.projects .contents .mark {
+  position: absolute;
+  background: transparent;
+  top: -35px;
+  left: -30px;
+}
+
+.projects .contents .mark-i {
+  position: absolute;
+  background: transparent;
+  bottom: -5px;
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.mark svg,
+.mark-i svg {
+  fill: rgba(255, 255, 255, 0.09);
+  background: transparent;
+  height: 60px;
+  width: 60px;
+}
+
+.testimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 250px;
+  max-width: 550px;
+  background: #272727;
+  margin: 3rem 0;
+  border-radius: 1rem;
+  padding: 1rem 4rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.testimonials .avatar {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonials .avatar img {
+  border-radius: 50%;
+}
+
+.testimonials .text {
+  position: relative;
+}
+
+.testimonials .client-info {
+  margin-top: 1rem;
+}
+
+.testimonials .client-info p span {
+  display: block;
+  color: var(--color-highlight);
+}
+
+/* contact section */
+.contact {
+  position: relative;
+}
+
+.contact .content {
+  padding: 5rem 0;
+  width: 500px;
+  min-width: 350px;
+  
+}
+
+.contact .content p {
+  margin: 3rem 0;
+}
+
+.contact form .in-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.contact form .in-group label {
+  color: var(--color-highlight);
+  margin-bottom: 0.5rem;
+}
+
+.contact form .in-group input,
+.contact form .in-group textarea {
+  background: #3a3a3a;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.valid-feedback {
+  font-style: italic;
+  color: var(--color-highlight);
+}
+
+.invalid-feedback {
+  font-style: italic;
+  color: var(--color-white);
+}
+
+.contact .img-bx {
+  width: auto;
+  height: 825px;
+}
+
+/* details section */
+.details h2{
+  margin: 1rem;
+}
+
+/* footer section */
+footer{
+  padding: 1rem;
+  background: #111111;
+}
+
+footer p{
+  margin: 0.5rem;
+}
+
+footer p span{
+  color: var(--color-highlight);
+}
+
+footer p span.copy{
+  font-size: 24px;
+}
+
+
+footer .social .links{
+  list-style: none;
+  margin-bottom: 0;
+}
+
+footer .social .links .link-item{
+  height: 24px;
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+footer .social .links .link-item svg{
+  fill: var(--color-white);
 }
