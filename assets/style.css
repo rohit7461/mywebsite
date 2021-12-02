@@ -247,7 +247,7 @@ nav.active{
   position: relative;
   width: 90%;
   max-width: 500px;
-  height: 330px;
+  max-height: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
