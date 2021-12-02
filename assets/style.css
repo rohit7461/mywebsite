@@ -78,9 +78,9 @@ body {
 }
 
 #logo {
-  position: absolute;
-  top: 50px;
-  left: 100px;
+  position: fixed;
+  top: 30px;
+  left: 50px;
   color: white;
   font-size: var(--text-body);
   font-family: "Revalia", cursive;
@@ -88,9 +88,9 @@ body {
 }
 
 #hamburger {
-  position: absolute;
-  top: 50px;
-  right: 70px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
   z-index: 999;
 }
@@ -101,15 +101,62 @@ body {
   background: white;
   height: 3px;
   width: 20px;
-  margin: 7px 0;
+  margin: 10px 0;
+  transition: 0.3s ease;
 }
 
-#hamburger span:nth-child(2) {
+#hamburger span.line-2 {
   width: 40px;
 }
 
-#hamburger span:last-child {
+#hamburger span.line-3 {
   margin-left: auto;
+}
+
+#hamburger.active span.line-1 {
+  background: var(--color-highlight);
+  transform: translate(4px, 6px) rotateZ(45deg);
+  transform-origin: top;
+}
+
+#hamburger.active span.line-2 {
+  transform: rotateZ(-45deg);
+}
+
+#hamburger.active span.line-3 {
+  background: var(--color-highlight);
+  transform-origin: bottom;
+  transform: translate(-4px, -6px) rotateZ(45deg);
+}
+
+nav {
+  position: fixed;
+  display: none;
+  place-items: center;
+  inset: 0 0 0 0;
+  background: #272727;
+  z-index: 900;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul .link{
+  text-decoration: none;
+  margin: 2rem 0;
+}
+
+nav ul .link a{
+  color: var(--color-white);
+}
+
+nav.active{
+  display: grid;
 }
 
 .banner .title {
@@ -143,7 +190,7 @@ body {
   transform: translateY(-2px);
 }
 
-.btn:focus{
+.btn:focus {
   box-shadow: none;
 }
 
@@ -304,7 +351,6 @@ body {
   padding: 5rem 0;
   width: 500px;
   min-width: 350px;
-  
 }
 
 .contact .content p {
@@ -349,40 +395,39 @@ body {
 }
 
 /* details section */
-.details h2{
+.details h2 {
   margin: 1rem;
 }
 
 /* footer section */
-footer{
+footer {
   padding: 1rem;
   background: #111111;
 }
 
-footer p{
+footer p {
   margin: 0.5rem;
 }
 
-footer p span{
+footer p span {
   color: var(--color-highlight);
 }
 
-footer p span.copy{
+footer p span.copy {
   font-size: 24px;
 }
 
-
-footer .social .links{
+footer .social .links {
   list-style: none;
   margin-bottom: 0;
 }
 
-footer .social .links .link-item{
+footer .social .links .link-item {
   height: 24px;
   width: 24px;
   margin: 0 0.5rem;
 }
 
-footer .social .links .link-item svg{
+footer .social .links .link-item svg {
   fill: var(--color-white);
 }
