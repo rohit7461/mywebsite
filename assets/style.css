@@ -255,6 +255,12 @@ nav.active{
   margin: 4rem 0;
 }
 
+.projects .contents .project .project-item .img-Bx{
+  height: 275px;
+  padding: 25px;
+  overflow: hidden;
+}
+
 .swiper-pagination-bullet {
   background: #e6e6e6;
 }
