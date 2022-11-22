@@ -248,10 +248,6 @@ nav.active{
   background: #272727;
 }
 
-.testimonials .client-name{
-  margin-bottom: 0px;
-}
-
 .testimonials .client-review,
 .testimonials .client-info{
   font-size: 14px;
@@ -266,23 +262,6 @@ nav.active{
 }
 
 /* contact section */
-.contact {
-  position: relative;
-}
-
-/* .contact .content {
-  padding: 5rem 0;
-  width: 500px;
-  min-width: 350px;
-} */
-
-/* .contact form .in-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 1rem 0;
-} */
-
 .contact form .in-group label {
   color: var(--color-highlight);
   margin-bottom: 0.5rem;
@@ -306,16 +285,6 @@ nav.active{
 .invalid-feedback {
   font-style: italic;
   color: var(--color-white);
-}
-
-/* .contact .img-bx {
-  width: auto;
-  height: 100%;
-} */
-
-/* details section */
-.details h2 {
-  /* margin: 1rem; */
 }
 
 /* footer section */
